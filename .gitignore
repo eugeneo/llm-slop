@@ -1,0 +1,6 @@
+venv
+bazel-bin
+bazel-llm-slop
+bazel-out
+bazel-testlogs
+
