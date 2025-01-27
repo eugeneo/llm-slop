@@ -3,5 +3,9 @@ load("@rules_python//python:defs.bzl", "py_binary")
 py_binary(
     name = "main",
     srcs = ["main.py"],
-    deps = [ "@abseil-py//absl:app" ],
+    deps = [
+        "@abseil-py//absl:app",
+        "@pypi//ollama:pkg",
+        "@pypi//pyyaml:pkg",
+    ],
 )
