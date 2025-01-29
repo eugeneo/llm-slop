@@ -248,7 +248,7 @@
         "bzlTransitiveDigest": "htCY8qwlmOmWUtFIn3/CdtzddHLDk012tAUn7ImsBjo=",
         "usagesDigest": "CqLNTFjMHUVbjq8A/pOKGSnApUg9D/XA5pnQbAMvpC4=",
         "recordedFileInputs": {
-          "@@//requirements_lock.txt": "1717bc713166c4865975e2851f5e224aed54ef2592e5a20f87d35221f251bb1c",
+          "@@//requirements_lock.txt": "65da4ef8dc28d8885d9bffc51fc97eb1ec4f67440e22feac215e6e37c2e8a4a9",
           "@@//requirements_lock_windows.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
           "@@protobuf+//python/requirements.txt": "983be60d3cec4b319dcab6d48aeb3f5b2f7c3350f26b3a9e97486c37967c73c5",
           "@@rules_fuzzing+//fuzzing/requirements.txt": "ab04664be026b632a0d2a2446c4f65982b7654f5b6851d2f9d399a19b7242a5b",
@@ -768,6 +768,25 @@
               "python_interpreter_target": "@@rules_python++python+python_3_12_3_host//:python",
               "repo": "pypi_312",
               "requirement": "pylint==3.3.3 --hash=sha256:07c607523b17e6d16e2ae0d7ef59602e332caa762af64203c24b41c27139f36a --hash=sha256:26e271a2bc8bce0fc23833805a9076dd9b4d5194e2a02164942cb3cdc37b4183"
+            }
+          },
+          "pypi_312_python_dotenv": {
+            "repoRuleId": "@@rules_python+//python/private/pypi:whl_library.bzl%whl_library",
+            "attributes": {
+              "dep_template": "@pypi//{name}:{target}",
+              "download_only": true,
+              "experimental_target_platforms": [
+                "cp312_linux_aarch64",
+                "cp312_linux_arm",
+                "cp312_linux_ppc",
+                "cp312_linux_s390x",
+                "cp312_linux_x86_64",
+                "cp312_osx_aarch64",
+                "cp312_osx_x86_64"
+              ],
+              "python_interpreter_target": "@@rules_python++python+python_3_12_3_host//:python",
+              "repo": "pypi_312",
+              "requirement": "python-dotenv==1.0.1 --hash=sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca --hash=sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"
             }
           },
           "pypi_312_pyyaml": {
@@ -3288,6 +3307,7 @@
                 "pydantic": "{\"pypi_312_pydantic\":[{\"version\":\"3.12\"}]}",
                 "pydantic_core": "{\"pypi_312_pydantic_core\":[{\"version\":\"3.12\"}]}",
                 "pylint": "{\"pypi_312_pylint\":[{\"version\":\"3.12\"}]}",
+                "python_dotenv": "{\"pypi_312_python_dotenv\":[{\"version\":\"3.12\"}]}",
                 "pyyaml": "{\"pypi_312_pyyaml\":[{\"version\":\"3.12\"}]}",
                 "sniffio": "{\"pypi_312_sniffio\":[{\"version\":\"3.12\"}]}",
                 "tomlkit": "{\"pypi_312_tomlkit\":[{\"version\":\"3.12\"}]}",
